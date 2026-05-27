@@ -158,7 +158,7 @@ class Parser {
         }
         mysqli_free_result($actionSet);
 
-        // Second result is the
+        // Second result is the id
         mysqli_next_result($this->dbConn);
         $idSet = mysqli_store_result($this->dbConn);
         $id = mysqli_fetch_assoc($idSet);
