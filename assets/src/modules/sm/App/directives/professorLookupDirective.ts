@@ -14,7 +14,7 @@ angular.module('sm').directive('professorLookup', function ($http) {
             if (scope.stats === 'none') {
               $http
                 .post(
-                  '/api/rmp.php',
+                  '/rmp',
                   { name: scope.professorLookup },
                   {
                     headers: {
